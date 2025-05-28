@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Math Helper</title>
   <style>
     body {
-      background-color: #1e1e1e;
-      font-family: 'Roboto', sans-serif;
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
     }
-    .navbar {
-      background-color: #2d2d2d;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
+    header {
+      background-color: #282828;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 22px;
       font-weight: bold;
     }
-    .container {
-      margin: 50px auto;
-      width: 90%;
-      max-width: 600px;
-      background: #2d2d2d;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      text-align: center;
-    }
-    input[type="text"] {
-      width: 80%;
-      padding: 10px;
-      margin: 15px 0;
-      font-size: 18px;
+    .toolbar button {
+      background: #444;
       border: none;
+      color: white;
+      padding: 8px 12px;
+      margin-left: 10px;
       border-radius: 6px;
-      background: #3a3a3a;
+      cursor: pointer;
+    }
+    .toolbar button:hover {
+      background: #555;
+    }
+    .workspace {
+      padding: 20px;
+    }
+    input {
+      width: 90%;
+      font-size: 18px;
+      padding: 10px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: none;
+      background-color: #333;
       color: white;
     }
-    input[type="submit"], button {
-      padding: 10px 20px;
-      font-size: 18px;
-      margin-top: 20px;
-      background-color: #4CAF50;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    input[type="submit"]:hover, button:hover {
-      background-color: #45a049;
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: #888;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">Math Helper</div>
+    <div class="toolbar">
+      <button onclick="fakeSave()">Save</button>
+      <button onclick="location.href='games.html'">Help</button>
+    </div>
+  </header>
+  <div class="workspace">
+    <input type="text" placeholder="Enter an expression..."/>
+    <input type="text" placeholder="y = x^2 or sin(x)..."/>
+    <input type="text" placeholder="x = 3 or slope = 2"/>
+  </div>
+  <footer>© 2025 Math Helper — Powered by GraphTech</footer>
 
-<div class="navbar">
-  Math Helper
-</div>
-
-<div class="container">
-  <h2>Enter a math problem:</h2>
-  <form>
-    <input type="text" placeholder="e.g., 5x + 2 = 12">
-    <br>
-    <input type="submit" value="Solve">
-  </form>
-  <br><br>
-  <button onclick="location.href='games.html'">Help</button>
-</div>
-
+  <script>
+    function fakeSave() {
+      alert("Your work has been saved!");
+    }
+  </script>
 </body>
 </html>
