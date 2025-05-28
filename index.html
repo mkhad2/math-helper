@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Helper</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #2d2d2d;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      margin: 50px auto;
+      width: 90%;
+      max-width: 600px;
+      background: #2d2d2d;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 15px 0;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      background: #3a3a3a;
+      color: white;
+    }
+    input[type="submit"], button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover, button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  Math Helper
+</div>
+
+<div class="container">
+  <h2>Enter a math problem:</h2>
+  <form>
+    <input type="text" placeholder="e.g., 5x + 2 = 12">
+    <br>
+    <input type="submit" value="Solve">
+  </form>
+  <br><br>
+  <button onclick="location.href='games.html'">Help</button>
+</div>
+
+</body>
+</html>
